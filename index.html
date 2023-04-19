@@ -10,6 +10,11 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <div class="wrapper">
@@ -41,7 +46,7 @@
       <main class="page">
         <section class="page__main main-block">
           <div class="main-block__container">
-            <div class="main__block-body body-main-block">
+            <div class="main-block__body body-main-block">
               <div class="body-main-block__content content-main-block">
                 <div class="content-main-block__body">
                   <div class="content-main-block__sub-title">
@@ -56,25 +61,70 @@
                   </div>
                 </div>
 
-                <form class="form-main-block__form" action="#">
-                  <input type="text" class="form-main-block__input" />
+                <form
+                  class="content-main-block__form form-main-block"
+                  action="#"
+                >
+                  <input
+                    placeholder="Enter Zipcode to search properties"
+                    type="text"
+                    class="form-main-block__input"
+                  />
                   <button type="submit" class="form-main-block__button">
                     Search Now!
                   </button>
                 </form>
               </div>
-              <div class="body-main-block__slider"></div>
+              <!-- Slider main container -->
+              <div class="body-main-block__slider slider-main-block swiper">
+                <!-- Additional required wrapper -->
+                <div class="slider-main-block__wrapper swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="slider-main-block__slide swiper-slide">
+                    <img src="/img/sliders/hero.jpg" alt="Slider" />
+                  </div>
+                  <div class="slider-main-block__slide swiper-slide">
+                    <img src="/img/sliders/hero.jpg" alt="Slider" />
+                  </div>
+                  <div class="slider-main-block__slide swiper-slide">
+                    <img src="/img/sliders/hero.jpg" alt="Slider" />
+                  </div>
+                </div>
+                <!-- If we need navigation buttons -->
+              </div>
+              <div class="body-main-block__arrows">
+                <div class="body-main-block__arrow swiper-button-prev"></div>
+                <div class="body-main-block__arrow swiper-button-next"></div>
+              </div>
             </div>
             <div class="main-block__partnes partnes-main-block">
-              <div class="partnes-main-block__lable"></div>
+              <div class="partnes-main-block__lable">Our Amazing Partners</div>
               <div class="partnes-main-block__items">
-                <div class="partnes-main-block__item"></div>
-              </div>
+                <div class="partnes-main-block__item">
+                  <img  src="img/partners/01.svg" alt="Partner" />
+                </div>
+                <div class="partnes-main-block__item">
+                  <img src="img/partners/02.svg" alt="Partner" />
+                </div>
+                <div class="partnes-main-block__item">
+                  <img src="img/partners/03.svg" alt="Partner" />
+                </div>
+                <div class="partnes-main-block__item">
+                  <img src="img/partners/04.svg" alt="Partner" />
+                </div>
+                <div class="partnes-main-block__item">
+                  <img src="img/partners/05.svg" alt="Partner" />
+                </div>
+                <div class="partnes-main-block__item">
+                  <img src="img/partners/06.svg" alt="Partner" />
+                </div>
             </div>
           </div>
         </section>
       </main>
       <footer class="footer">footer</footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="/js/javascript.js"></script>
   </body>
 </html>
