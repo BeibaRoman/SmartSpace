@@ -143,6 +143,10 @@ body {
 
 /* ============================================ */
 
+.main-block {
+  padding-bottom: 110px;
+}
+
 .main-block__container {
   padding-top: 183px;
   position: relative;
@@ -256,7 +260,6 @@ body {
   position: relative;
   z-index: 2;
   display: flex;
-  height: 86px;
   margin-right: -188px;
   box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.03),
     0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0227778),
@@ -264,10 +267,11 @@ body {
     0px 20px 13px rgba(0, 0, 0, 0.015),
     0px 8.14815px 6.51852px rgba(0, 0, 0, 0.0117778),
     0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00722222);
-  background: #fff url(../img/mail/mail.svg) 33px 50% no-repeat;
+  background: #fff url(../img/mail/mail.svg) 33px 32px no-repeat;
 }
 
 .form-main-block__input {
+  height: 86px;
   padding: 0px 0px 0px 74px;
   border: 1px solid #dadada;
   background-color: transparent;
@@ -281,6 +285,7 @@ body {
 }
 
 .form-main-block__button {
+  height: 86px;
   cursor: pointer;
   width: 188px;
   background-color: #f85a47;
@@ -307,9 +312,65 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  gap: 5px;
+  gap: 25px;
 }
 
 .partnes-main-block__item img {
   max-width: 100%;
+}
+
+@media (max-width: 1199.98px) {
+  .main-block__container {
+    padding-top: 100px;
+    padding-bottom: 30px;
+  }
+  .content-main-block__body {
+    padding-right: 0px;
+  }
+  .body-main-block {
+    display: block;
+  }
+  .form-main-block {
+    margin-right: 0;
+  }
+
+  .body-main-block__content {
+    margin-bottom: 40px;
+  }
+
+  .main-block__body {
+    margin-bottom: 40px;
+  }
+
+  .partnes-main-block {
+    max-width: none;
+    position: relative;
+    z-index: 2;
+  }
+}
+@media (max-width: 767.98px) {
+  .partnes-main-block__items {
+    justify-content: center;
+  }
+
+  .content-main-block__title {
+    font-size: 30px;
+    line-height: 120%;
+  }
+
+  .form-main-block {
+    display: block;
+  }
+  .form-main-block__button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 479.98px) {
+  .form-main-block {
+    background: #ffffff;
+  }
+  .form-main-block__input {
+    padding: 0 15px;
+  }
 }
