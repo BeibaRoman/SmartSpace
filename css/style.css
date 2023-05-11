@@ -234,7 +234,7 @@ body {
 .body-main-block__arrow.swiper-button-prev,
 .body-main-block__arrow.swiper-button-next {
   position: static;
-  background: url(../img/arrows/arr.svg) 0 0 / 100% no-repeat;
+  background: url("../img/arrows/arr.svg") 0 0 / 100% no-repeat;
   height: 20px;
   width: 11px;
 }
@@ -285,7 +285,7 @@ body {
     0px 20px 13px rgba(0, 0, 0, 0.015),
     0px 8.14815px 6.51852px rgba(0, 0, 0, 0.0117778),
     0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00722222);
-  background: #fff url(../img/mail/mail.svg) 33px 32px no-repeat;
+  background: #fff url("../img/mail/mail.svg") 33px 32px no-repeat;
 }
 
 .form-main-block__input {
@@ -460,7 +460,7 @@ body {
   transform: translate(86.5%, 0px);
   width: 210px;
   height: 11px;
-  background: url(../img/how/border_1.svg) 0 0 / 100% no-repeat;
+  background: url("../img/how/border_1.svg") 0 0 / 100% no-repeat;
 }
 .item-how_2:not(:last-child)::after {
   transform: translate(86.5%, 0px) rotate(-180deg);
